@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import anime from "animejs";
-// import { cloudName, uploadPreset } from "../utils/cloudinaryConfig";
 import { cloudName, uploadPreset } from "../cloudinaryConfig";
 import { Image, Transformation } from "cloudinary-react";
 
@@ -48,7 +47,7 @@ const FloatingAvatars = ({ avatars }) => {
         upload_preset={uploadPreset}
         secure={true}
       >
-        <Transformation width={50} height={50} gravity="face" crop="thumb" />
+        <Transformation width={70} height={70} gravity="face" crop="thumb" />
         <Transformation radius="max" />
         <Transformation effect="trim" />
       </Image>
